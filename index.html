@@ -23,10 +23,10 @@
         </section>
         <!-- start playground -->
         <section id="play-ground" class="akash hidden">
-            <div class="flex flex-col items-center gap-16 pt-20">
+            <div class="flex flex-col items-center gap-6 pt-10">
                 <!-- screen -->
                 <div>
-                    <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
+                    <div class="artboard artboard-horizontal responsive phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
                         <div class="flex justify-center">
                             <p class="bg-[#2F2941] text-white px-6 pb-4 rounded-b-xl">Don't watch keyboard  while playing...</p>
                         </div>
@@ -76,24 +76,25 @@
                     <button class="btn bg-[#894189] text-white rounded-full p-2 px-6">
                         Life
                         <img src="images/svg1.svg" alt="">
-                        <span>1</span>
+                        <span id="your-life">5</span>
                       </button>
                       <button class="btn bg-[#360490] text-white rounded-full p-2 px-6">
                         Score
                         <img src="images/gvg2.svg" alt="">
-                        <span>1</span>
+                        <span id="your-score">0</span>
                       </button>
                 </div>
             </div>
         </section>
         <!-- end playground -->
-        <section class="score flex justify-center items-center min-h-screen hidden">
+        <section id="result-page" class="score flex justify-center items-center min-h-screen hidden">
             <div class="text-white text-center space-y-6">
+                <h3 class="text-3xl text-[mediumturquoise] font-bold uppercase">game over !</h3>
                 <h1 class="text-8xl">
                     <span class="font-bold">Score :</span>
-                    <span>14</span>
+                    <span id="result-score">0</span>
                 </h1>
-                <button class="btn bg-white text-black capitalize">play again</button>
+                 <button onclick="playAgain()" class="btn bg-white text-black capitalize">play again</button>
                 <p>Practice will make you Pro</p>
             </div>
         </section>
