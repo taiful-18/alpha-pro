@@ -1,6 +1,8 @@
 function hendelKbdButtonUp(event) {
     // plyer pressed 
     const plyerPressedKey = event.key;
+    const gamePlayInformation = document.getElementById('game-play-information');
+    gamePlayInformation.classList.add('hidden')
 
 
     // get the expect to pressed
